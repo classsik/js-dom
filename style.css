@@ -1,0 +1,20 @@
+.ex_4 {
+    display: inline-block;
+    border: 1px solid red;
+    padding: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#ex_34.my-class {
+    color: red;
+}
+
+#ex_35.my-class {
+    color: red;
+}

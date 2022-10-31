@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- 1 -->
+    <button onclick="alert('Привет!')">Нажми на меня!</button>
+    <!-- 2 -->
+    <button onmouseover="alert('Привет!')">Наведи на меня!</button>
+    <!-- 3 -->
+    <button ondblclick="alert('Привет!')">Двойной счелчок по мне!</button>
+    <!-- 4 -->
+    <div onmouseout="alert('Привет!')" class="ex_4">Наведи на меня мышь - а потом убери!</div>
+
+    <!-- 5 -->
+    <div>
+        <input type="text" value="Ку-ку" id="ex_5">
+        <button onclick="ex_5()">Нажми на меня!</button>
+    </div>
+
+    <!-- 6 -->
+    <div>
+        <input type="text" value="Ку-ку" id="ex_6">
+        <button onclick="ex_6()">Нажми на меня!</button>
+    </div>
+
+    <!-- 7 -->
+    <img src="./img/1.jpg" width="150" id="ex_7">
+    <button onclick="ex_7()">Нажми на меня!</button>
+
+
+    <!-- 8 -->
+    <input type="text" value="Нажми на меня!" onclick="ex_8(this)">
+
+    <!-- 9 -->
+    <input type="text" value="Нажми на меня!" onfocus="ex_9(this)">
+
+    <!-- 10 -->
+    <input type="text" value="Нажми на меня!" onfocus="ex_10_1(this)" onblur="ex_10_2(this)">
+
+    <!-- 11 -->
+    <div>
+        <p>
+            Это input type="submit".
+        </p>
+        <input type="submit" onclick="ex_11(this)" value="Нажми на меня!">
+    </div>
+
+    <!-- 12 -->
+    <div>
+        <p>
+            Это input type="submit".
+        </p>
+        <input type="submit" onclick="ex_12(this)" value="Нажми на меня!">
+    </div>
+
+    <!-- 13 -->
+    <img src="./img/1.jpg" width="150" id="ex_13" onmouseover="ex_13_1(this)" onmouseout="ex_13_2(this)">
+
+    <!-- 14 -->
+    <input type="text" value="Ку-ку" id="ex_14">
+    <button onclick="ex_14()">Нажми на меня!</button>
+
+    <!-- 15 -->
+    <div>
+        <input type="text" value="Ку-ку" id="ex_15">
+        <button onclick="ex_15_1()">Нажми на меня!</button>
+        <button onclick="ex_15_2()">Нажми потом на меня!</button>
+    </div>
+
+    <!-- 16 -->
+    <input type="text" value="Ку-ку" id="ex_16">
+    <button onclick="ex_16()">Нажми на меня!</button>
+
+    <!-- 17 -->
+    <p>
+        Это input type="submit".
+    </p>
+    <input type="submit" onclick="ex_17_1(this)" value="Нажми на меня!" id="ex_17_1">
+    <input type="submit" onclick="ex_17_2('button')" value="Нажми чтобы отблокировать элемент" style="display: none;"
+        id="ex_17_2">
+
+    <!-- 18 -->
+    <p>
+        Кнопка считает кол-во нажатий по ней.
+    </p>
+    <input type="submit" onclick="ex_18(this)" value="0">
+
+    <!-- 19 -->
+    <div>
+        <input type="text" value="Ку-ку" id="ex_19">
+        <button onclick="ex_19()">Нажми на меня!</button>
+    </div>
+
+    <!-- 20 -->
+    <div>
+        <input type="text" value="Ку-ку" id="ex_20" class="eee www ddd">
+        <button onclick="ex_20()">Нажми на меня!</button>
+    </div>
+
+    <!-- 21 -->
+    <div>
+        <input type="text" value="Привет!" id="ex_21_1">
+        <input type="text" value="Пока!" id="ex_21_2">
+        <button onclick="ex_21()">Нажми на меня!</button>
+    </div>
+
+    <!-- 22 -->
+    <div>
+        <p>
+            По нажатию на кнопку в нижнем инпуте появится квадрат числа из верхнего инпута.
+        </p>
+        <input type="text" value="" placeholder="Введите число!" id="ex_22_1">
+        <input id="ex_22_2" value="Здесь появится результат." disabled="">
+        <button onclick="ex_22()">Нажми на меня!</button>
+    </div>
+
+    <!-- 23 -->
+    <p>
+        По нажатию на кнопку в нижнем инпуте появится квадрат числа из верхнего инпута. Если введено не число - должна
+        показаться ошибка.
+    </p>
+    <input type="text" placeholder="Введите число!" id="ex_23_1">
+    <input value="Здесь появится результат." disabled id="ex_23_2">
+    <button onclick="ex_23()">Нажми на меня!</button>
+
+    <!-- 24 -->
+    <p>
+        Обратите внимание на курсор в различных состояниях.
+    </p>
+    <input type="submit" onclick="ex_24(this)" value="Нажми на меня!">
+
+    <!-- 25 -->
+    <div>
+        <input type="text" value="" id="ex_25">
+        <input type="submit" onclick="ex_25('+')" value="Я добавлю +">
+        <input type="submit" onclick="ex_25('-')" value="Я добавлю -">
+        <input type="submit" onclick="ex_25('/')" value="Я добавлю /">
+        <input type="submit" onclick="ex_25('*')" value="Я добавлю *">
+        <input type="submit" onclick="ex_25('1')" value="1">
+        <input type="submit" onclick="ex_25('2')" value="2">
+        <input type="submit" onclick="ex_25('3')" value="3">
+        <input type="submit" onclick="ex_25('4')" value="4">
+        <input type="submit" onclick="ex_25('5')" value="5">
+        <input type="submit" onclick="ex_25('6')" value="6">
+        <input type="submit" onclick="ex_25('7')" value="7">
+        <input type="submit" onclick="ex_25('8')" value="8">
+        <input type="submit" onclick="ex_25('9')" value="9">
+        <input type="submit" onclick="ex_25('0')" value="0">
+    </div>
+
+    <!-- 26 -->
+    <p id="ex_26">
+        При нажатии на кнопку текст в абзаце поменяется.
+    </p>
+    <input type="submit" value="Нажмите на меня!" onclick="ex_26()">
+
+    <!-- 27 -->
+    <p id="ex_27">
+        При нажатии на кнопку текст в абзаце поменяется.
+    </p>
+    <input type="submit" value="Нажмите на меня!" onclick="ex_27()">
+
+    <!-- 28 -->
+    <p id="test">
+        При нажатии на кнопку абзац станет h3, но текст останется.
+    </p>
+    <input type="submit" value="Нажмите на меня!" onclick="go()">
+
+    <!-- 29 -->
+    <div>
+        <input type="text" value="" id="ex_29_1">
+        +
+        <input type="text" value="" id="ex_29_2">
+        =
+        <span id="ex_29_3">?</span>
+        <button onclick="ex_29()">Нажмите чтобы сложить</button>
+    </div>
+
+    <!-- 30 -->
+    <div>
+        <p class="ex_30">
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+        </p>
+        <p class="ex_30">
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+        </p>
+        <p class="ex_30">
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+        </p>
+        <p class="ex_30">
+            При нажатии на кнопку текст в каждом абзаце поменяется.
+        </p>
+        <h2>А я h2 и не поменяюсь!</h2>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_30()">
+    </div>
+
+    <!-- 31 -->
+    <div>
+        <h2 class="ex_31">Заголовок с классом www.</h2>
+        <p class="ex_31">Абзац с классом www.</p>
+        <p class="ex_31">Абзац с классом www.</p>
+        <p>Просто абзац, не поменяется.</p>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_31()">
+    </div>
+
+    <!-- 32 -->
+    <div>
+        <h2 class="ex_32">Заголовок с классом www, не поменяется.</h2>
+        <p class="ex_32">Абзац с классом www.</p>
+        <p class="ex_32">Абзац с классом www.</p>
+        <p class="ex_32">Абзац с классом www.</p>
+        <p>Просто абзац, не поменяется.</p>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_32()">
+    </div>
+
+    <!-- 33 -->
+    <p id="ex_33" class="my-class">
+        Абзац с class="my-class".
+    </p>
+    <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="ex_33()">
+
+    <!-- 34 -->
+    <p id="ex_34" class="my-class">
+        Абзац с class="my-class". Класс задает красный цвет.
+    </p>
+    <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="ex_34_1()">
+    <input type="submit" value="Нажми - и я удалю атрибут class для абзаца." onclick="ex_34_2()">
+
+    <!-- 35 -->
+    <p id="ex_35" class="my-class class">
+        Абзац с class="my-class class". Класс "my-class" задает красный цвет.
+    </p>
+    <input type="submit" value="Нажми - и я выведу класс абзаца." onclick="ex_35_1()">
+    <input type="submit" value="Нажми - и я изменю атрибут class для абзаца на 'new-class'." onclick="ex_35_2()">
+
+    <!-- 36 -->
+    <div>
+        <input type="text" value="" placeholder="Введи в меня текст!" id="ex_36" onkeyup="ex_36(this)">
+        <span id="ex_36_1"></span>
+    </div>
+
+    <!-- 37 -->
+    <div>
+        <a href="http://google.ru">ссылка 1</a>
+        <a href="http://tut.by">ссылка 2</a>
+        <a href="http://yandex.ru">ссылка 3</a>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_37()">
+    </div>
+
+    <!-- 38 -->
+    <p id="ex_38">
+        При нажатии на кнопку текст в абзаце поменяется.
+    </p>
+    <input type="submit" value="Нажмите на меня!" onclick="ex_38(this)">
+
+    <!-- 39 -->
+    <div>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <p class="ex_39">
+            Абзац с текстом.
+        </p>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_39()">
+    </div>
+
+    <!-- 40 -->
+    <div>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <p class="ex_40">
+            Абзац с текстом.
+        </p>
+        <input type="submit" value="Нажмите на меня!" onclick="ex_40()">
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
